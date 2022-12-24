@@ -1,0 +1,306 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/Block.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Spike.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Spikes.tscn" type="PackedScene" id=5]
+[ext_resource path="res://sprites/background.jpg" type="Texture" id=6]
+
+[node name="level_7" type="Node2D"]
+
+[node name="Floor" type="Node2D" parent="."]
+
+[node name="Floor" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 32, 568 )
+
+[node name="Floor2" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 96, 568 )
+
+[node name="Floor3" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 160, 568 )
+
+[node name="Floor4" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 224, 568 )
+
+[node name="Floor5" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 288, 568 )
+
+[node name="Floor6" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 352, 568 )
+
+[node name="Floor18" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 320, 503.328 )
+
+[node name="Floor19" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 464, 416 )
+
+[node name="Floor21" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 599.438, 320 )
+
+[node name="Floor22" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 408, 237.5 )
+
+[node name="Floor53" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 544, 136 )
+
+[node name="Floor54" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 544, 136 )
+
+[node name="Floor23" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 224 )
+
+[node name="Floor27" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 224 )
+
+[node name="Floor24" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 224 )
+
+[node name="Floor25" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 224 )
+
+[node name="Floor26" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 224 )
+
+[node name="Floor28" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 288 )
+
+[node name="Floor29" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 288 )
+
+[node name="Floor30" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 288 )
+
+[node name="Floor31" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 288 )
+
+[node name="Floor32" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 288 )
+
+[node name="Floor33" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 352 )
+
+[node name="Floor34" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 352 )
+
+[node name="Floor35" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 352 )
+
+[node name="Floor36" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 352 )
+
+[node name="Floor37" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 352 )
+
+[node name="Floor70" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 32 )
+
+[node name="Floor71" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 96 )
+
+[node name="Floor72" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 160 )
+
+[node name="Floor38" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 416 )
+
+[node name="Floor39" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 416 )
+
+[node name="Floor40" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 416 )
+
+[node name="Floor41" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 416 )
+
+[node name="Floor42" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 416 )
+
+[node name="Floor43" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 480 )
+
+[node name="Floor44" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 480 )
+
+[node name="Floor45" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 480 )
+
+[node name="Floor46" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 480 )
+
+[node name="Floor47" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 480 )
+
+[node name="Floor48" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 544 )
+
+[node name="Floor49" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 544 )
+
+[node name="Floor50" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 544 )
+
+[node name="Floor51" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 544 )
+
+[node name="Floor52" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 544 )
+
+[node name="Floor7" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 416, 568 )
+
+[node name="Floor8" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 480, 568 )
+
+[node name="Floor9" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 544, 568 )
+
+[node name="Floor10" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 608, 568 )
+
+[node name="Floor11" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 672, 568 )
+
+[node name="Floor12" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, 568 )
+
+[node name="Floor13" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, 568 )
+
+[node name="Floor14" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, 568 )
+
+[node name="Floor15" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, 568 )
+
+[node name="Floor16" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, 568 )
+
+[node name="Floor17" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 32, -32 )
+
+[node name="Floor73" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 32, 32 )
+
+[node name="Floor74" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 32, 96 )
+
+[node name="Floor75" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 32, 160 )
+
+[node name="Floor79" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( -32, 224 )
+
+[node name="Floor80" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( -32, 288 )
+
+[node name="Floor81" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( -32, 352 )
+
+[node name="Floor82" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( -32, 416 )
+
+[node name="Floor83" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( -32, 480 )
+
+[node name="Floor84" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( -32, 544 )
+
+[node name="Floor76" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 96, 32 )
+
+[node name="Floor77" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 96, 96 )
+
+[node name="Floor78" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 96, 160 )
+
+[node name="Floor20" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 96, -32 )
+
+[node name="Floor56" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 160, -32 )
+
+[node name="Floor57" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 224, -32 )
+
+[node name="Floor58" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 288, -32 )
+
+[node name="Floor59" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 352, -32 )
+
+[node name="Floor60" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 416, -32 )
+
+[node name="Floor61" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 480, -32 )
+
+[node name="Floor62" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 544, -32 )
+
+[node name="Floor63" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 608, -32 )
+
+[node name="Floor64" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 672, -32 )
+
+[node name="Floor65" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 736, -32 )
+
+[node name="Floor66" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 800, -32 )
+
+[node name="Floor67" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 864, -32 )
+
+[node name="Floor68" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 928, -32 )
+
+[node name="Floor69" parent="Floor" instance=ExtResource( 3 )]
+position = Vector2( 992, -32 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 160, 488 )
+
+[node name="Block" parent="." instance=ExtResource( 2 )]
+position = Vector2( 880, 160 )
+
+[node name="Block1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 760, 160 )
+
+[node name="Block2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 536, 72 )
+
+[node name="Coin" parent="." instance=ExtResource( 4 )]
+position = Vector2( 60, 232 )
+scene = "level_1"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Background" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -64, -8 )
+scale = Vector2( 0.968757, 0.882225 )
+texture = ExtResource( 6 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Spikes" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Spikes" parent="Spikes" instance=ExtResource( 5 )]
+position = Vector2( 400, 528 )
+
+[node name="Spikes2" parent="Spikes" instance=ExtResource( 5 )]
+position = Vector2( 496, 528 )
+
+[node name="Spikes3" parent="Spikes" instance=ExtResource( 5 )]
+position = Vector2( 592, 528 )
+
+[node name="Spikes4" parent="Spikes" instance=ExtResource( 5 )]
+position = Vector2( 688, 528 )
+z_index = -1

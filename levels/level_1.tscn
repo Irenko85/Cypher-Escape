@@ -1,0 +1,134 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://sprites/background.jpg" type="Texture" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Block.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/Spike.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Floor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Spikes.tscn" type="PackedScene" id=6]
+
+[node name="Level_1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 40.5, 488 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Background" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -99.0145, -19.478 )
+scale = Vector2( 0.968757, 0.882225 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Floor" type="Node2D" parent="."]
+
+[node name="Floor" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 32, 568 )
+
+[node name="Floor2" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 96, 568 )
+
+[node name="Floor3" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 160, 568 )
+
+[node name="Floor4" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 224, 568 )
+
+[node name="Floor5" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 288, 568 )
+
+[node name="Floor6" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 352, 568 )
+
+[node name="Floor7" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 416, 568 )
+
+[node name="Floor8" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 480, 568 )
+
+[node name="Floor9" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 544, 568 )
+
+[node name="Floor10" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 608, 568 )
+
+[node name="Floor11" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 672, 568 )
+
+[node name="Floor12" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 736, 568 )
+
+[node name="Floor13" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 800, 568 )
+
+[node name="Floor19" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 608, 504 )
+
+[node name="Floor24" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 544, 504 )
+
+[node name="Floor23" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 544, 440 )
+
+[node name="Floor25" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 992, 376 )
+
+[node name="Floor20" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 672, 504 )
+
+[node name="Floor21" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 736, 504 )
+
+[node name="Floor22" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 800, 504 )
+
+[node name="Floor14" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 864, 568 )
+
+[node name="Floor15" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 928, 568 )
+
+[node name="Floor16" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 992, 568 )
+
+[node name="Floor17" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 992, 504 )
+
+[node name="Floor18" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 992, 440 )
+
+[node name="Floor30" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( 1056, 248 )
+
+[node name="Floor26" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( -32, 376 )
+
+[node name="Floor27" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( -32, 568 )
+
+[node name="Floor28" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( -32, 504 )
+
+[node name="Floor29" parent="Floor" instance=ExtResource( 5 )]
+position = Vector2( -32, 440 )
+
+[node name="Block1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 288, 504 )
+
+[node name="Block2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 672, 440 )
+
+[node name="Coin" parent="." instance=ExtResource( 4 )]
+position = Vector2( 992, 316.38 )
+scene = "level_2"
+
+[node name="Spikes" type="Node2D" parent="."]
+z_index = -1
+
+[node name="Spikes" parent="Spikes" instance=ExtResource( 6 )]
+position = Vector2( 881.558, 529.025 )
+
+[node name="Spikes2" parent="Spikes" instance=ExtResource( 6 )]
+position = Vector2( 969.808, 529.025 )
