@@ -8,6 +8,8 @@ Controls:
 - Press **SPACE** to jump
 - Press **R** to reset the current level
 
+To play, download the .zip, extract and run the file "Cypher Escape.exe".
+
 ------------
 
 ### Español:
@@ -18,3 +20,5 @@ Controles:
 - Presiona **D** para moverte a la derecha
 - Presiona **ESPACIO** para saltar
 - Presiona **R** para resetear el nivel actual
+
+Para jugar, descarga el .zip, extráelo y ejecuta el archivo "Cypher Escape.exe".
