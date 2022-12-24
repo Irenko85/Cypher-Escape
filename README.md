@@ -6,7 +6,7 @@ Controls:
 - Press **A** to move left
 - Press **D** to move right
 - Press **SPACE** to jump
-- Press **R** to reset the current level*
+- Press **R** to reset the current level
 
 ------------
 
@@ -17,4 +17,4 @@ Controles:
 - Presiona **A** para moverte a la izquierda
 - Presiona **D** para moverte a la derecha
 - Presiona **ESPACIO** para saltar
-- Presiona **R** para resetear el nivel actual*
+- Presiona **R** para resetear el nivel actual
