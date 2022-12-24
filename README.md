@@ -1,4 +1,5 @@
 # Cypher Escape
+![Cypher Escape](https://i.imgur.com/CYfIgSY.png "Cypher Escape")
 ### English:
 The objective of the game is to collect the silver coin, for this you have to think how to get it using the yellowish boxes that you can push using the movement controls. Beware of the spikes throughout the levels, spikes will kill you and reset the level. The game has a total of 7 levels, once you pass level 7, you start again from level 1.
 
@@ -7,8 +8,6 @@ Controls:
 - Press **D** to move right
 - Press **SPACE** to jump
 - Press **R** to reset the current level
-
-To play, download the .zip, extract and run the file "Cypher Escape.exe".
 
 ------------
 
@@ -20,5 +19,3 @@ Controles:
 - Presiona **D** para moverte a la derecha
 - Presiona **ESPACIO** para saltar
 - Presiona **R** para resetear el nivel actual
-
-Para jugar, descarga el .zip, extráelo y ejecuta el archivo "Cypher Escape.exe".
