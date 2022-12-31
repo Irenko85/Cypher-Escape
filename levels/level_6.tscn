@@ -140,6 +140,12 @@ position = Vector2( 1056, 296 )
 [node name="Floor45" parent="Floor" instance=ExtResource( 1 )]
 position = Vector2( 1056, 360 )
 
+[node name="Floor56" parent="Floor" instance=ExtResource( 1 )]
+position = Vector2( 1056, 10 )
+
+[node name="Floor57" parent="Floor" instance=ExtResource( 1 )]
+position = Vector2( 1056, 74 )
+
 [node name="Floor46" parent="Floor" instance=ExtResource( 1 )]
 position = Vector2( -32, 440 )
 
