@@ -1,7 +1,7 @@
 # Cypher Escape
 ![Cypher Escape](https://i.imgur.com/CYfIgSY.png "Cypher Escape")
 ### English:
-The objective of the game is to collect the silver coin, for this you have to think how to get it using the yellowish boxes that you can push using the movement controls. Beware of the spikes throughout the levels, spikes will kill you and reset the level. The game has a total of 7 levels, once you pass level 7, you start again from level 1.
+The goal of the game is to collect the silver coin, for this you have to think how to get it using the yellowish boxes that you can push using the movement controls. Beware of the spikes throughout the levels, spikes will kill you and reset the level. The game has a total of 7 levels, once you pass level 7, you start again from level 1.
 
 Controls:
 - Press **A** to move left
