@@ -1,0 +1,41 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://buttons/play_button.png" type="Texture" id=1]
+[ext_resource path="res://buttons/play_button_hover.png" type="Texture" id=2]
+[ext_resource path="res://buttons/play_button_pressed.png" type="Texture" id=3]
+[ext_resource path="res://scripts/PlayButton.gd" type="Script" id=4]
+[ext_resource path="res://buttons/credits_button.png" type="Texture" id=5]
+[ext_resource path="res://buttons/credits_button_hover.png" type="Texture" id=6]
+[ext_resource path="res://buttons/credits_button_pressed.png" type="Texture" id=7]
+[ext_resource path="res://scripts/CreditsButton.gd" type="Script" id=8]
+
+[node name="main-menu" type="Control"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.3, 0.3 )
+
+[node name="PlayButton" type="TextureButton" parent="."]
+margin_left = -25.0
+margin_top = -10.0
+rect_scale = Vector2( 0.0690993, 0.0690993 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 2 )
+script = ExtResource( 4 )
+
+[node name="CreditsButton" type="TextureButton" parent="."]
+margin_left = -45.0
+margin_top = 15.0
+margin_right = 1248.0
+margin_bottom = 252.0
+rect_scale = Vector2( 0.0690993, 0.0690993 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 6 )
+script = ExtResource( 8 )
+
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="CreditsButton" to="CreditsButton" method="_on_PlayButton_pressed"]
