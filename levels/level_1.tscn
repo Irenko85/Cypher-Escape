@@ -115,7 +115,7 @@ position = Vector2( -32, 504 )
 position = Vector2( -32, 440 )
 
 [node name="Block1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 288, 504 )
+position = Vector2( 266, 501 )
 
 [node name="Block2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 672, 440 )
