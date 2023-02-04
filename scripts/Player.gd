@@ -7,8 +7,6 @@ var velocity: Vector2 = Vector2()
 var push: int = 12
 onready var sprite: Sprite = get_node("Sprite")
 
-
-
 func _ready():
 	$AnimationPlayer.play("SpriteAnimation")
 	
@@ -34,11 +32,13 @@ func _physics_process(delta):
 		
 	for i in get_slide_count():
 		var collision = get_slide_collision(i)
+		
 		if collision.collider is Block:
 			collision.collider.apply_central_impulse(-collision.normal * push)
+			
 		if collision.collider is Spikes:
 			get_tree().reload_current_scene()
 	
-	if Input.is_action_pressed("reset_level"):
+	if Input.is_action_just_released("reset_level"):
 		get_tree().reload_current_scene()
-	
+

@@ -168,6 +168,46 @@ z_index = -1
 position = Vector2( 40, -8 )
 z_index = -1
 
+[node name="Floor35" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 568 )
+z_index = -1
+
+[node name="Floor55" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 504 )
+z_index = -1
+
+[node name="Floor58" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 440 )
+z_index = -1
+
+[node name="Floor59" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 376 )
+z_index = -1
+
+[node name="Floor60" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 312 )
+z_index = -1
+
+[node name="Floor61" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 248 )
+z_index = -1
+
+[node name="Floor62" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 184 )
+z_index = -1
+
+[node name="Floor63" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 120 )
+z_index = -1
+
+[node name="Floor64" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, 56 )
+z_index = -1
+
+[node name="Floor65" parent="Floor" instance=ExtResource( 2 )]
+position = Vector2( -24, -8 )
+z_index = -1
+
 [node name="Floor47" parent="Floor" instance=ExtResource( 2 )]
 position = Vector2( 544, 312 )
 

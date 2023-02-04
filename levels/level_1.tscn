@@ -7,7 +7,7 @@
 [ext_resource path="res://scenes/Floor.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/Spikes.tscn" type="PackedScene" id=6]
 
-[node name="Level_1" type="Node2D"]
+[node name="level_1" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 40.5, 488 )
@@ -115,7 +115,7 @@ position = Vector2( -32, 504 )
 position = Vector2( -32, 440 )
 
 [node name="Block1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 266, 501 )
+position = Vector2( 289, 499 )
 
 [node name="Block2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 672, 440 )
