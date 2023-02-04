@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Cypher Escape"
-run/main_scene="res://levels/level_1.tscn"
+run/main_scene="res://levels/main-menu.tscn"
 config/icon="res://sprites/icon.png"
 config/windows_native_icon="res://sprites/icon.ico"
 

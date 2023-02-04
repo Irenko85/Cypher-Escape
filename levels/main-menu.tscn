@@ -1,0 +1,233 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://buttons/play_button.png" type="Texture" id=1]
+[ext_resource path="res://buttons/play_button_hover.png" type="Texture" id=2]
+[ext_resource path="res://buttons/play_button_pressed.png" type="Texture" id=3]
+[ext_resource path="res://scripts/PlayButton.gd" type="Script" id=4]
+[ext_resource path="res://buttons/credits.png" type="Texture" id=5]
+[ext_resource path="res://sprites/background.jpg" type="Texture" id=9]
+[ext_resource path="res://scenes/Floor.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/Spikes.tscn" type="PackedScene" id=11]
+[ext_resource path="res://sprites/radianite_block.png" type="Texture" id=12]
+[ext_resource path="res://sprites/player_sprite_1.png" type="Texture" id=13]
+[ext_resource path="res://scenes/Spike.tscn" type="PackedScene" id=14]
+
+[node name="main-menu" type="Control"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.3, 0.3 )
+
+[node name="PlayButton" type="TextureButton" parent="."]
+margin_left = -32.0
+margin_top = -15.0
+margin_right = 694.0
+margin_bottom = 227.0
+rect_scale = Vector2( 0.0901502, 0.0901502 )
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 1 )
+texture_pressed = ExtResource( 3 )
+texture_hover = ExtResource( 2 )
+script = ExtResource( 4 )
+
+[node name="Irenko" type="TextureButton" parent="."]
+margin_left = -39.0
+margin_top = 15.0
+margin_right = 2182.0
+margin_bottom = 331.0
+rect_scale = Vector2( 0.0351938, 0.0351938 )
+texture_normal = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -2.30074e-05, -0.500005 )
+scale = Vector2( 0.265323, 0.279105 )
+z_index = -2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="floor" type="Node2D" parent="."]
+
+[node name="Floor" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -149, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor2" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -133, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor3" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -117, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor4" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -101, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor5" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -85, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor6" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -69, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor7" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -53, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor8" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -37, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor9" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -21, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor10" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( -5, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor11" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 11, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor12" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 27, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor13" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 43, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor14" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 59, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor15" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 75, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor16" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 91, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor17" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 107, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor18" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 123, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor19" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 139, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor20" parent="floor" instance=ExtResource( 10 )]
+position = Vector2( 155, 83 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="roof" type="Node2D" parent="."]
+
+[node name="Floor" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -149, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor2" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -133, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor3" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -117, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor4" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -101, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor5" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -85, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor6" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -69, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor7" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -53, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor8" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -37, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor9" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -21, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor10" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( -5, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor11" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 11, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor12" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 27, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor13" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 43, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor14" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 59, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor15" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 75, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor16" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 91, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor17" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 107, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor18" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 123, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor19" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 139, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Floor20" parent="roof" instance=ExtResource( 10 )]
+position = Vector2( 155, -82 )
+scale = Vector2( 0.265323, 0.279105 )
+
+[node name="Spikes" parent="." instance=ExtResource( 11 )]
+position = Vector2( -107, 71 )
+scale = Vector2( 0.48277, 0.48277 )
+z_index = -1
+
+[node name="PlayerSprite1" type="Sprite" parent="."]
+position = Vector2( 88, 41 )
+scale = Vector2( 0.132877, 0.132877 )
+texture = ExtResource( 13 )
+
+[node name="RadianiteBlock" type="Sprite" parent="."]
+position = Vector2( 88, 65 )
+scale = Vector2( 0.0502555, 0.0502555 )
+texture = ExtResource( 12 )
+
+[node name="Spike" parent="." instance=ExtResource( 14 )]
+position = Vector2( -107, 0 )
+scale = Vector2( 0.323021, 0.312948 )
+
+[connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]

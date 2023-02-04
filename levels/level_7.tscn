@@ -273,8 +273,8 @@ position = Vector2( 760, 160 )
 position = Vector2( 536, 72 )
 
 [node name="Coin" parent="." instance=ExtResource( 4 )]
-position = Vector2( 60, 232 )
-scene = "level_1"
+position = Vector2( 68, 231 )
+scene = "main-menu"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
