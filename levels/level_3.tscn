@@ -340,3 +340,7 @@ centered = false
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+light_mask = 2
+color = Color( 0.598046, 0.523163, 0.847656, 1 )

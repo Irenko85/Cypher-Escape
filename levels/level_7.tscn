@@ -304,3 +304,7 @@ position = Vector2( 592, 528 )
 [node name="Spikes4" parent="Spikes" instance=ExtResource( 5 )]
 position = Vector2( 688, 528 )
 z_index = -1
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+light_mask = 2
+color = Color( 0.598046, 0.523163, 0.847656, 1 )
