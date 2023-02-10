@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://buttons/play_button.png" type="Texture" id=1]
 [ext_resource path="res://buttons/play_button_hover.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://buttons/credits.png" type="Texture" id=5]
 [ext_resource path="res://sprites/light.png" type="Texture" id=6]
 [ext_resource path="res://sprites/player_sprite_2.png" type="Texture" id=7]
+[ext_resource path="res://buttons/cypher-escape.png" type="Texture" id=8]
 [ext_resource path="res://sprites/background.jpg" type="Texture" id=9]
 [ext_resource path="res://scenes/Floor.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/Spikes.tscn" type="PackedScene" id=11]
@@ -52,11 +53,15 @@ current = true
 zoom = Vector2( 0.3, 0.3 )
 
 [node name="PlayButton" type="TextureButton" parent="."]
-margin_left = -32.0
-margin_top = -15.0
-margin_right = 694.0
-margin_bottom = 227.0
-rect_scale = Vector2( 0.0901502, 0.0901502 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = 7.0
+margin_right = 701.0
+margin_bottom = 249.0
+rect_scale = Vector2( 0.0717841, 0.0717841 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 3 )
@@ -64,11 +69,11 @@ texture_hover = ExtResource( 2 )
 script = ExtResource( 4 )
 
 [node name="Irenko" type="TextureButton" parent="."]
-margin_left = -39.0
-margin_top = 15.0
-margin_right = 2182.0
-margin_bottom = 331.0
-rect_scale = Vector2( 0.0351938, 0.0351938 )
+margin_left = -28.0
+margin_top = 26.0
+margin_right = 2193.0
+margin_bottom = 342.0
+rect_scale = Vector2( 0.0245734, 0.0245734 )
 texture_normal = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -331,5 +336,10 @@ energy = 0.94
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="Cypher-escape" type="Sprite" parent="."]
+position = Vector2( 0, -37 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
 
 [connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]
