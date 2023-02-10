@@ -2,7 +2,7 @@
 
 [ext_resource path="res://sounds/music.mp3" type="AudioStream" id=1]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+[node name="music" type="AudioStreamPlayer"]
 stream = ExtResource( 1 )
-volume_db = -25.0
+volume_db = -26.0
 autoplay = true
