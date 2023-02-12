@@ -1,16 +1,50 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://buttons/play_button.png" type="Texture" id=1]
 [ext_resource path="res://buttons/play_button_hover.png" type="Texture" id=2]
 [ext_resource path="res://buttons/play_button_pressed.png" type="Texture" id=3]
 [ext_resource path="res://scripts/PlayButton.gd" type="Script" id=4]
 [ext_resource path="res://buttons/credits.png" type="Texture" id=5]
+[ext_resource path="res://sprites/light.png" type="Texture" id=6]
+[ext_resource path="res://sprites/player_sprite_2.png" type="Texture" id=7]
+[ext_resource path="res://buttons/cypher-escape.png" type="Texture" id=8]
 [ext_resource path="res://sprites/background.jpg" type="Texture" id=9]
 [ext_resource path="res://scenes/Floor.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/Spikes.tscn" type="PackedScene" id=11]
 [ext_resource path="res://sprites/radianite_block.png" type="Texture" id=12]
 [ext_resource path="res://sprites/player_sprite_1.png" type="Texture" id=13]
 [ext_resource path="res://scenes/Spike.tscn" type="PackedScene" id=14]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 7 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "main_idle"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 13 ), ExtResource( 7 ) ]
+}
 
 [node name="main-menu" type="Control"]
 
@@ -19,11 +53,15 @@ current = true
 zoom = Vector2( 0.3, 0.3 )
 
 [node name="PlayButton" type="TextureButton" parent="."]
-margin_left = -32.0
-margin_top = -15.0
-margin_right = 694.0
-margin_bottom = 227.0
-rect_scale = Vector2( 0.0901502, 0.0901502 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -25.0
+margin_top = 7.0
+margin_right = 701.0
+margin_bottom = 249.0
+rect_scale = Vector2( 0.0717841, 0.0717841 )
 mouse_default_cursor_shape = 2
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 3 )
@@ -31,11 +69,11 @@ texture_hover = ExtResource( 2 )
 script = ExtResource( 4 )
 
 [node name="Irenko" type="TextureButton" parent="."]
-margin_left = -39.0
-margin_top = 15.0
-margin_right = 2182.0
-margin_bottom = 331.0
-rect_scale = Vector2( 0.0351938, 0.0351938 )
+margin_left = -28.0
+margin_top = 26.0
+margin_right = 2193.0
+margin_bottom = 342.0
+rect_scale = Vector2( 0.0245734, 0.0245734 )
 texture_normal = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -216,18 +254,92 @@ position = Vector2( -107, 71 )
 scale = Vector2( 0.48277, 0.48277 )
 z_index = -1
 
-[node name="PlayerSprite1" type="Sprite" parent="."]
-position = Vector2( 88, 41 )
-scale = Vector2( 0.132877, 0.132877 )
-texture = ExtResource( 13 )
+[node name="Spikes2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 108, 71 )
+scale = Vector2( 0.48277, 0.48277 )
+z_index = -1
 
-[node name="RadianiteBlock" type="Sprite" parent="."]
-position = Vector2( 88, 65 )
+[node name="PlayerSprite1" type="Sprite" parent="."]
+position = Vector2( 2.00001, 58 )
+scale = Vector2( 0.132877, 0.132877 )
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerSprite1"]
+autoplay = "main_idle"
+anims/RESET = SubResource( 1 )
+anims/main_idle = SubResource( 2 )
+
+[node name="RadianiteBlock2" type="Sprite" parent="."]
+position = Vector2( -58, 65 )
 scale = Vector2( 0.0502555, 0.0502555 )
 texture = ExtResource( 12 )
 
+[node name="Light2D2" type="Light2D" parent="RadianiteBlock2"]
+position = Vector2( 0, -59.6949 )
+scale = Vector2( 19.8983, 19.8983 )
+texture = ExtResource( 6 )
+texture_scale = 0.25
+color = Color( 0.341176, 1, 0.454902, 1 )
+energy = 0.75
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RadianiteBlock3" type="Sprite" parent="."]
+position = Vector2( -34, 65 )
+scale = Vector2( 0.0502555, 0.0502555 )
+texture = ExtResource( 12 )
+
+[node name="Light2D2" type="Light2D" parent="RadianiteBlock3"]
+position = Vector2( 0, -59.6949 )
+scale = Vector2( 19.8983, 19.8983 )
+texture = ExtResource( 6 )
+texture_scale = 0.25
+color = Color( 0.341176, 1, 0.454902, 1 )
+energy = 0.75
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RadianiteBlock4" type="Sprite" parent="."]
+position = Vector2( -58, 48 )
+scale = Vector2( 0.0502555, 0.0502555 )
+texture = ExtResource( 12 )
+
+[node name="Light2D2" type="Light2D" parent="RadianiteBlock4"]
+position = Vector2( 0, -59.6949 )
+scale = Vector2( 19.8983, 19.8983 )
+texture = ExtResource( 6 )
+texture_scale = 0.25
+color = Color( 0.341176, 1, 0.454902, 1 )
+energy = 0.75
+__meta__ = {
+"_edit_lock_": true
+}
+
 [node name="Spike" parent="." instance=ExtResource( 14 )]
-position = Vector2( -107, 0 )
+position = Vector2( -107, 27 )
 scale = Vector2( 0.323021, 0.312948 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+light_mask = 2
+color = Color( 0.545098, 0.47451, 0.780392, 1 )
+
+[node name="Light2D" type="Light2D" parent="."]
+texture = ExtResource( 6 )
+texture_scale = 0.65
+color = Color( 1, 1, 1, 0.745098 )
+energy = 0.94
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Cypher-escape" type="Sprite" parent="."]
+position = Vector2( 0, -37 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
 
 [connection signal="pressed" from="PlayButton" to="PlayButton" method="_on_PlayButton_pressed"]
